@@ -40,7 +40,7 @@ import base64
 
 import types
 from types import *
-import collections
+import collections.abc
 
 
 imp_suffixes = " ".join([x[0][1:] for x in imp.get_suffixes()])
@@ -51,8 +51,8 @@ def _callable(obj):
     if PY2:
         return callable(obj)
     else:
-        return (isinstance(obj, collections.Callable) or
-                (hasattr(obj, "__call__") and isinstance(obj.__call__, collections.Callable)))
+        return (isinstance(obj, collections.abc.Callable) or
+                (hasattr(obj, "__call__") and isinstance(obj.__call__, collections.abc.Callable)))
 
 ####################### The published page cache ##############################
 
