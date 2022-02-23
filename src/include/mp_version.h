@@ -8,5 +8,5 @@
 
 #define MP_VERSION_MAJOR 3
 #define MP_VERSION_MINOR 5
-#define MP_VERSION_PATCH 0
+#define MP_VERSION_PATCH "0+git20211031"
 
